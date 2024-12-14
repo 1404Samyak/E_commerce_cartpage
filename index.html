@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        .product h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .product p {
+            margin: 5px 0;
+        }
+        .product button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .product button:hover {
+            background-color: #218838;
+        }
+        .cart {
+            margin-top: 20px;
+            border: 1px solid #333;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .cart ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .cart li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .cart li button {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        .cart li button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Product List</h1>
+        <div id="productList">
+            <div class="product">
+                <div>
+                    <h3>Product 1</h3>
+                    <p>Price: $10</p>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <div>
+                    <h3>Product 2</h3>
+                    <p>Price: $20</p>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <div>
+                    <h3>Product 3</h3>
+                    <p>Price: $30</p>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <div>
+                    <h3>Product 4</h3>
+                    <p>Price: $40</p>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <div>
+                    <h3>Product 5</h3>
+                    <p>Price: $50</p>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h2>Cart</h2>
+            <ul id="cartItems">
+                <li>No items in the cart</li>
+            </ul>
+            <p id="totalPrice">Total Price: $0</p>
+        </div>
+    </div>
+    <script src="/ProjectsinJS/E_commerce_cartpage/index.js"></script>
+</body>
+</html>
